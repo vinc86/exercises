@@ -22,7 +22,7 @@ console.log(`${x} x ${y} = `, y * x);
 console.log(`${x} / ${y} = `, y / x);
 
 /*  TASK 5 */
-console.log("here");
+
 let z = "10";
 const resultOne = (x * y) / z;
 
@@ -42,16 +42,15 @@ console.log(`(${a} + ${b}) x ${c} = `, resultTwo);
 
 /*  TASK 7 */
 
-console.log(`increment a`, (a += 1));
+console.log(`increment a`, ++a);
 
 /*  TASK 8 */
 
-console.log(`decrement a`, (a -= 1));
+console.log(`decrement b`, --b);
 
 /*  TASK 9 */
 
-const d = a - b;
-
+let d = b - a;
 console.log(`${d} + ${c} =`, d + c);
 
 /*  TASK 10 */
