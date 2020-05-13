@@ -58,4 +58,4 @@ console.log(`${d} + ${c} =`, d + c);
 
 /*  TASK 11 */
 
-console.log(`${resultOne} / ${resultTwo} = `, resultOne / resultTwo);
+console.log(`${resultOne} modulo ${resultTwo} = `, resultOne % resultTwo);
