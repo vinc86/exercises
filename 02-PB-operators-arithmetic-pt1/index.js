@@ -11,7 +11,7 @@ console.log(`${x} + ${y} = `, x + y);
 
 /* TASK 2 */
 
-console.log(`${x} - ${y} = `, x - y);
+console.log(`${x}-${y} = ` + (x - y), " ", `${y}-${x} = ` + (y - x));
 
 /* TASK 3 */
 
