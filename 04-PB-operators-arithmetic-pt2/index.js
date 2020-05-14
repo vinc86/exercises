@@ -103,4 +103,9 @@ let previousFiveTestSum = 75 + 70 + 85 + 90 + 100;
 let totalAverage = 85;
 let unknownScore = totalAverage * 6 - previousFiveTestSum;
 
-console.log("Last test score: ", unknownScore);
+console.log("Score in the sixth test: ", unknownScore);
+
+/*  Q12 */
+
+let minPercentage = 80 * 9 - 78 * 8;
+console.log("James needs a minimum of: ", minPercentage, "%");
