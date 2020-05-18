@@ -1,3 +1,5 @@
+"use strict";
+
 /* --------- BASIC ARITHMETIC PROBLEMS ---------- */
 
 /* Q1 */

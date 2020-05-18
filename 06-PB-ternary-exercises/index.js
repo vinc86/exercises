@@ -1,3 +1,5 @@
+"use strict";
+
 // task 1
 let isDog = "Boris";
 console.log(isDog ? "pat,pat" : "find me a dog to pat!");

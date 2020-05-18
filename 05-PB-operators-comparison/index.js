@@ -1,3 +1,5 @@
+"use strict";
+
 // task 0
 let x = 20;
 let y = 30;
