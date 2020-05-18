@@ -24,6 +24,9 @@ console.log(isStudent ? "Ticket costs €5,00" : "Ticket costs €12,00");
 
 // task 5
 
-let okMarie = null;
-let cake = false;
-console.log(cake ? (okMarie = "Let them eat cake") : (okMarie = "Oh, bother"));
+/* let okMarie = null; */
+let cake = true;
+/* console.log(cake ? (okMarie = "Let them eat cake") : (okMarie = "Oh, bother")); */
+
+let okMarie = cake === true ? "Let them eat cake" : "Oh, bother";
+console.log(okMarie);
