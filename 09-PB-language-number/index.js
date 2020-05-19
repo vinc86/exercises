@@ -1,3 +1,5 @@
+"use strict";
+
 // task 1
 
 let stringOne = "This is a string ";
