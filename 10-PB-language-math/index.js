@@ -1,8 +1,8 @@
 "use strict";
 // task 1
 
-console.log(`Task 1a: ${Math.min(-1, 4)}`);
-console.log(`Task 1b: ${Math.max(-1, 4)}`);
+console.log(`Task 1a: ${Math.min(-1, 2, 3, 4)}`);
+console.log(`Task 1b: ${Math.max(-1, 2, 3, 4)}`);
 
 // task 2
 
