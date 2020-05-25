@@ -1,3 +1,5 @@
+"use strict";
+
 // task 1
 
 // NaN stand for: Not a Number
