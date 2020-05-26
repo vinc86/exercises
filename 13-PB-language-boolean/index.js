@@ -5,6 +5,7 @@ console.log("Task 1:");
 console.log(
   `- 3="3" output: SyntaxError: Invalid left-hand side in assignment`
 ); // returns an error because a single = is used to assign values into declared variables/constants
+//we should use === as comparison operator because it check's not only the value but also the type.
 
 console.log(`- 3 == "3" output: ${3 == "3"}`); // return true, it checks only the value
 console.log(`- 3 === "3" output: ${3 === "3"}`); // return false, it checks value and type, and they are two different types (number and string)
