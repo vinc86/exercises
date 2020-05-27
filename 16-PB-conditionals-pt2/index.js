@@ -25,7 +25,10 @@ if (markBMI > johnBMI) {
 }
 
 
-
+console.log(
+    "Is Willy's BMI higher than Andrea's?",
+    markBMI > johnBMI ? "Yes Willy has a higher BMI than Andrea at the moment" : "not it is not"
+)
 /* const BMI = (mass, height) => {
     let result = mass / (height * height);
     return result;
