@@ -44,12 +44,12 @@ if (a > b && a > c) {
 // task 4
 
 console.log("Task 4:");
-let string = "Python";
+let string = "thpyon";
 
-if (string.includes("Py")) {
+if (string.startsWith("Py")) {
   console.log(string);
 } else {
-  console.log('The string doesn\'t include "Py"!');
+  console.log('The string doesn\'t start with "Py"!');
 }
 
 // task 5
