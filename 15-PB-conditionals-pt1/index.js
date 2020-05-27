@@ -44,7 +44,7 @@ if (a > b && a > c) {
 // task 4
 
 console.log("Task 4:");
-let string = "thpyon";
+let string = "Python";
 
 if (string.startsWith("Py")) {
   console.log(string);
@@ -140,9 +140,3 @@ if (age < 13) {
 } else {
   console.log(`${firstName} is an adult!`);
 }
-
-// task 12
-
-console.log("BONUS TASK 12:");
-
-/* to be continued.... */
