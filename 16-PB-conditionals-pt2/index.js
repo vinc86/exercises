@@ -1,13 +1,5 @@
 "use strict";
 
-// BMI mass/(height*height);
-
-/* const BMI = (mass, height) => {
-    let result = mass / (height * height);
-    console.log(result);
-}
-
-BMI(74, 1.75); */
 
 let markMass = 75;
 let markHeight = 1.75
@@ -31,3 +23,13 @@ if (markBMI > johnBMI) {
         `John have the highest BMI with: ${Math.round(johnBMI)}`
     );
 }
+
+
+
+/* const BMI = (mass, height) => {
+    let result = mass / (height * height);
+    return result;
+}
+
+let johnBMI = Math.round(BMI(75, 1.75));
+let markBMI = Math.round(BMI(84, 1.77)); */
