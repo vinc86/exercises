@@ -1,3 +1,4 @@
+"use strict";
 // task 1
 console.log("Task 1:");
 let num1 = 50;
