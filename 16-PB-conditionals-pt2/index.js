@@ -1,3 +1,5 @@
+"use strict";
+
 // BMI mass/(height*height);
 
 /* const BMI = (mass, height) => {
