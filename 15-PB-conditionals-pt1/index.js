@@ -107,10 +107,12 @@ console.log("Task 9:");
 int1 = 4;
 int2 = 4;
 
+let sum = int1 + int2;
+
 if (int1 === int2) {
-  console.log((int1 + int2) * 3);
+  console.log((sum) * 3);
 } else {
-  console.log(int1 + int2);
+  console.log(sum);
 }
 
 // task 10
@@ -119,10 +121,12 @@ console.log("Task 10:");
 int1 = 4;
 const FIXED_19 = 19;
 
+let diff = int1 - FIXED_19;
+
 if (int1 > FIXED_19) {
-  console.log((int1 - FIXED_19) * 2);
+  console.log(diff * 2);
 } else {
-  console.log(int1 - FIXED_19);
+  console.log(diff);
 }
 
 // task 11
