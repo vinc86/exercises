@@ -36,11 +36,11 @@ if ((aleezaTeamAverage > lisTeamAverage) && (aleezaTeamAverage > maryTeamAverage
 } else if ((maryTeamAverage > aleezaTeamAverage) && (maryTeamAverage > lisTeamAverage)) {
     console.log(`----->Mary's team wins with ${maryTeamAverage} points!`);
 } else if ((aleezaTeamAverage === lisTeamAverage) && ((aleezaTeamAverage > maryTeamAverage) && (lisTeamAverage > maryTeamAverage))) {
-    console.log("Aleeza's team and Lis's team have the same high score!");
+    console.log("----->Aleeza's team and Lis's team have the same high score!");
 } else if ((aleezaTeamAverage === maryTeamAverage) && ((aleezaTeamAverage > lisTeamAverage) && (maryTeamAverage > lisTeamAverage))) {
-    console.log("Aleeza's team and Mary's team have the same high score!");
+    console.log("----->Aleeza's team and Mary's team have the same high score!");
 } else if ((lisTeamAverage === maryTeamAverage) && ((lisTeamAverage > aleezaTeamAverage) && (maryTeamAverage > aleezaTeamAverage))) {
-    console.log("Lis's team and Mary's team have the same high score!");
+    console.log("----->Lis's team and Mary's team have the same high score!");
 } else {
     console.log("----->The three teams have the same score!")
 }
