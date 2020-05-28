@@ -1,10 +1,10 @@
 "use strict";
 // task 1
-let determiner = 4;
+let determiner;
 let x;
 
 console.log("Task1:")
-determiner >= 0 ? x = "Greater or equal to 0" : x = "Less than 0";
+x = determiner >= 0 ? "Greater or equal to 0" : "Less than 0";
 console.log(x);
 
 
