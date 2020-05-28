@@ -1,10 +1,4 @@
-/* 
-
-Aleeza's 89, 120 and 103 
-Lis's team scored 116, 94 and 123 
-
-*/
-
+"use strict";
 // task 1a
 
 console.log("Task 1a:");
