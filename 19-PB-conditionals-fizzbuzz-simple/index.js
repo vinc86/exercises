@@ -1,3 +1,5 @@
+"use strict";
+
 // SWITCH/CASE
 
 const playFizzBuzz = (num) => {
