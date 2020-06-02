@@ -65,7 +65,7 @@ switch (fruit) {
 
 // task 4
 
-let percentageComplete = "23";
+let percentageComplete = "-10";
 
 // CHECK FOR ERRORS FIRST
 
@@ -74,8 +74,8 @@ if (isNaN(percentageComplete)) {
     console.log("Insert a percentage by typing a proper number!");
 } else {
     // check if the value is above zero
-    if (percentageComplete < 0) {
-        console.log("The percentage can't be below 0")
+    if ((percentageComplete < 0) || (percentageComplete > 100)) {
+        console.log("The percentage can't be below 0 or above 100")
     } else {
 
         switch (true) {
@@ -97,7 +97,7 @@ if (isNaN(percentageComplete)) {
                 break;
             default:
                 // if the percentage is 0 or above 100
-                console.log("The percentage can't be 0 or above 100!");
+                console.log("The percentage can't be 0!");
 
 
         }
