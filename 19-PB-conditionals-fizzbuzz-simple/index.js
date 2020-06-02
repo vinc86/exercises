@@ -6,7 +6,7 @@ const playFizzBuzz = (num) => {
 
     let isDivisible3 = (num % 3) === 0;
     let isDivisible5 = (num % 5) === 0;
-    let isDivisible4Both = ((num % 3) === 0 && (num % 5) === 0);
+    let isDivisible4Both = isDivisible3 && isDivisible5;
     let message = null;
 
     if (num > 0) {
@@ -40,7 +40,7 @@ console.log(playFizzBuzz(0));
 let num = 15;
 let isDivisible3 = (num % 3) === 0;
 let isDivisible5 = (num % 5) === 0;
-let isDivisible4Both = ((num % 3) === 0 && (num % 5) === 0);
+let isDivisible4Both = isDivisible3 && isDivisible5;
 
 if (isDivisible4Both === true) {
     console.log("FizzBuzz");
