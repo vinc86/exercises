@@ -65,13 +65,13 @@ switch (fruit) {
 
 // task 4
 
-let percentageComplete = 101;
+let percentageComplete = "23";
 
 // CHECK FOR ERRORS FIRST
 
 // check if the value is a number value
-if (typeof percentageComplete === "string") {
-    console.log("Insert a percentage by typing a number! (Can't be a string!)");
+if (isNaN(percentageComplete)) {
+    console.log("Insert a percentage by typing a proper number!");
 } else {
     // check if the value is above zero
     if (percentageComplete < 0) {
@@ -95,12 +95,9 @@ if (typeof percentageComplete === "string") {
             case percentageComplete === 100:
                 console.log("You're there. Well done!");
                 break;
-            case percentageComplete > 100:
-                console.log("The percentage can't be above 100!");
-                break;
             default:
-                // if the percentage is 0
-                console.log("You have no percentage!")
+                // if the percentage is 0 or above 100
+                console.log("The percentage can't be 0 or above 100!");
 
 
         }
