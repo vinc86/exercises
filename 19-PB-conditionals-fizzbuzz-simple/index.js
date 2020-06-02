@@ -9,26 +9,33 @@ const playFizzBuzz = (num) => {
     let isDivisible4Both = ((num % 3) === 0 && (num % 5) === 0);
     let message = null;
 
-    switch (true) {
-        case isDivisible4Both:
-            message = "FizzBuzz";
-            break;
-        case isDivisible3:
-            message = "Fizz";
-            break;
-        case isDivisible5:
-            message = "Buzz";
-            break;
-        default:
-            message = "Try Again!";
-            break;
+    if (num > 0) {
 
+        switch (true) {
+            case isDivisible4Both:
+                message = "FizzBuzz";
+                break;
+            case isDivisible3:
+                message = "Fizz";
+                break;
+            case isDivisible5:
+                message = "Buzz";
+                break;
+            default:
+                message = num;
+                break;
+
+        }
+
+    } else {
+        console.log("Insert a proper number!");
     }
+
 
     return message;
 }
 
-console.log(playFizzBuzz(5));
+console.log(playFizzBuzz(0));
 
 
 
@@ -46,5 +53,5 @@ if (isDivisible4Both === true) {
 } else if (isDivisible5 === true) {
     console.log("Buzz");
 } else {
-    console.log("Try Again!");
+    console.log(num);
 }
