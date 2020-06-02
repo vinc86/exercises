@@ -23,8 +23,6 @@ const playFizzBuzz = (num) => {
                 break;
             default:
                 message = num;
-                break;
-
         }
 
     } else {
