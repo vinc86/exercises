@@ -30,8 +30,6 @@ const playFizzBuzz = (num) => {
     } else {
         console.log("Insert a proper number!");
     }
-
-
     return message;
 }
 
