@@ -1,4 +1,4 @@
-"use strict";
+/* "use strict";
 
 // task 1
 
@@ -61,11 +61,11 @@ switch (fruit) {
         break;
     default:
         console.log("Write banana, orange, apple or strawberry!");
-}
+} */
 
 // task 4
 
-let percentageComplete = "-10";
+let percentageComplete = "30";
 
 // CHECK FOR ERRORS FIRST
 
@@ -83,7 +83,7 @@ if (isNaN(percentageComplete)) {
             case (percentageComplete > 0) && (percentageComplete < 30):
                 console.log("Still a long way to go!");
                 break;
-            case (percentageComplete >= 30) && (percentageComplete <= 50):
+            case 30 >= percentageComplete <= 50:
                 console.log("Slowly getting there!");
                 break;
             case (percentageComplete > 50) && (percentageComplete <= 80):
