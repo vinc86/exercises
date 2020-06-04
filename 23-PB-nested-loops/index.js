@@ -22,7 +22,7 @@ for (let i = 0; i <= 10; i++) {
 
 // i really have no idea how i get it right :D
 
-var n = 5;
+
 console.log();
 
 for (let i = 0; i <= 20; i++) {
