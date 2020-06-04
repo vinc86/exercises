@@ -1,3 +1,5 @@
+"use strict";
+
 for (let i = 0; i <= 10; i++) {
     let star = "";
     for (let l = 10; l > i; l--) {
@@ -24,7 +26,7 @@ var n = 5;
 console.log();
 
 for (let i = 0; i <= 20; i++) {
-    let star = ""
+    let star = "";
 
     for (let s = 0; s <= i; s++) {
         star += " ";
