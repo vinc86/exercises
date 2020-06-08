@@ -4,6 +4,7 @@
 console.log("Task 1:");
 let sum = 0;
 for (let i = 1; i <= 20; i++) {
+
     sum = sum + i;
 }
 
@@ -14,6 +15,7 @@ console.log(sum);
 console.log("Task 2:");
 
 let bottles = ["one", "two", "three", "four", "five"];
+
 for (let bottle of bottles) {
 
     if (bottle === "one") {
@@ -80,8 +82,8 @@ for (let i = 1; i <= 100; i++) {
 
 console.log("Task 6:");
 
-let sum2 = 0;
 
+let sum2 = 0;
 for (let i = 0; i <= 1000; i++) {
     let mult3 = i % 3;
     let mult5 = i % 5;
