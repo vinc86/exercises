@@ -5,7 +5,7 @@ let day = date.getDate();
 let month = date.getMonth();
 let year = date.getFullYear();
 
-let date_Today = new Date(year, month, day);
+let dateToday = new Date(year, month, day);
 
 let futureDate = new Date("2021-06-20");
 
@@ -21,4 +21,4 @@ const myDate = (dateA, dateB) => {
 
 
 
-myDate(date_Today, futureDate);
+myDate(dateToday, futureDate);
