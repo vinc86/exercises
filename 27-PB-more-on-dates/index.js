@@ -4,13 +4,15 @@
 // 2 = 28;
 //4,6,9,11 = 30;    
 
-const date = new Date("2020-04-8");
+const date = new Date();
+date.setFullYear(2020, 6, 27);
 
 const checkDays = (value) => {
-    const month = value.getMonth() + 1;
+    const month = value.getMonth();
     const day = value.getDate();
     let restDays;
 
+    console.log(month);
     switch (month) {
         case 2:
             restDays = 28 - day;
@@ -33,4 +35,9 @@ const checkDays = (value) => {
 
 }
 
+
+
 checkDays(date);
+
+
+// i have to make it with setDate, i will try!
