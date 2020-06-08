@@ -12,16 +12,11 @@ const checkDays = (value) => {
     let restDays;
 
     switch (month) {
-        case 1:
-        case 3:
-        case 5:
-        case 7:
-        case 8:
-        case 10:
-        case 12:
-            restDays = 31 - day;
+        case 2:
+            restDays = 28 - day;
             console.log(`${restDays} left till the end of the Month!`);
             break;
+
         case 4:
         case 6:
         case 9:
@@ -30,9 +25,10 @@ const checkDays = (value) => {
             console.log(`${restDays} left till the end of the Month!`);
             break;
         default:
-            restDays = 28 - day;
+            restDays = 31 - day;
             console.log(`${restDays} left till the end of the Month!`);
             break;
+
     }
 
 }
