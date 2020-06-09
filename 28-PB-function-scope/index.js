@@ -35,7 +35,7 @@ console.log("Task 3:");
 
 const exponent = (a, b) => {
     let result = null;
-    result = a * b;
+    result = a ** b;
     console.log(result);
 }
 
