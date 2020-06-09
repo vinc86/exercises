@@ -21,8 +21,9 @@ console.log("Task 2:");
 
 let fruit = "peach";
 
-const printFavoriteFruit = (v) => {
-    console.log(`My favorite fruit is: ${v}`);
+const printFavoriteFruit = (value) => {
+    fruit = "banana";
+    console.log(`My favorite fruit is: ${value}`);
 
 }
 
