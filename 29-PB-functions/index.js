@@ -76,3 +76,27 @@ console.log(compareFirst);
 //////////////////////////////////////////////////
 
 // 5.  Count Occurrences
+
+console.log("task 5:");
+
+let stringToCheck = "this is a striiiiiing";
+let letterToCheck = "i";
+const countOccurrence = (string, letter) => {
+    let result = 0;
+    if (string.includes(letter)) {
+        for (let i = 0; i <= string.length; i++) {
+            if (string[i] === letter) {
+                result += 1;
+            };
+
+            /* return `contains: ${string.replace(/[^letter]/g, "").length} ${letter}`; */
+        }
+        return `contains: ${result} ${letter}`;
+    } else {
+        return `Your string does not contains ${letter}`;
+    }
+}
+
+let firstCheck = countOccurrence(stringToCheck, letterToCheck);
+
+console.log(firstCheck);
