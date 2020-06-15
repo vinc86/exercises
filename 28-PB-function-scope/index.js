@@ -6,14 +6,15 @@ console.log("Task 1:");
     if ((typeof a !== "number") || (typeof b !== "number")) {
         console.log("Expecting numbers as parameters!");
     } else {
-        let result = null;
+        let result = "";
         for (let i = 1; i <= b; i++) {
-            result = Math.pow(a, i)
-            console.log(result);
+            result += " " + Math.pow(a, i)
+
         }
+        console.log(result);
     }
 
-})(2, 8);
+})(5, 8);
 
 ///////////////////////////////////////////
 
