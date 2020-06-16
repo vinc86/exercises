@@ -10,8 +10,8 @@ const average = (...numbers) => {
     let average = 0;
     for (let num of numbers) {
         result += num;
-        average = result / numbers.length;
     }
+    average = result / numbers.length;
     return average;
 
 };

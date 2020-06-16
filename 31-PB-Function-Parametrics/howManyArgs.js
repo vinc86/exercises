@@ -3,9 +3,10 @@
 
 const howManyArgs = (...args) => {
     let values = 0;
-    for (let i = 0; i < args.length; i++) {
-        values += 1;
-    }
+    /*  for (let i = 0; i < args.length; i++) {
+         values += 1;
+     } */
+    values = args.length;
     return values;
 };
 
