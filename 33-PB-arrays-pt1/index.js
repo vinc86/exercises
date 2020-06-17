@@ -3,8 +3,9 @@
 // 1
 
 const euroCities = ["Paris", "London", "Valletta", "Prague", "Rome"];
-let city = euroCities[1];
+console.log(euroCities);
 
+let city = euroCities[1];
 console.log(city);
 
 // 2.
