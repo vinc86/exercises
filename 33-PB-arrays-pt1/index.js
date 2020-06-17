@@ -38,13 +38,20 @@ const asianCities = ["Hong Kong", "Beijing", "Shanghai", "Delhi", "Tokyo"];
 
 // 8.
 
-const anotherArray = [];
+
+
+const anotherArray = asianCities.slice(1, 4);
+console.log(anotherArray);
+
+
+
+/* const anotherArray = [];
 
 anotherArray.push(asianCities[1]);
 anotherArray.push(asianCities[3]);
 
 console.log(asianCities);
-console.log(anotherArray);
+console.log(anotherArray); */
 
 // 9.
 
