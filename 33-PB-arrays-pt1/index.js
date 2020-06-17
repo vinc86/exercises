@@ -91,9 +91,9 @@ console.log();
 let string = "Hello World!";
 
 function reverseString(str) {
-    // using split to create an array an separate each letter;
-    // reverse() the order;
-    // join() to transform it to a string;
+    // 1. using split() to create an array an separate each letter;
+    // 2. reverse() the order of the letters;
+    // 3. join() to transform it into a string and remove the space between the letters with "";
     return str.split("").reverse().join("");
 }
 
