@@ -200,12 +200,16 @@ console.log("Bonus: Alphabetical Order:");
 
 const alphaOrder = (string) => {
 
-
+    /* console.log(string);
     const splitString = string.split("");
+    console.log(splitString);
     const sortString = splitString.sort();
+    console.log(sortString);
     const joinString = sortString.join("");
-    console.log("-----> ", joinString);
+    console.log("-----> ", joinString); */
+
+    return string.split("").sort().join("");
 
 }
-
+console.log(alphaOrder("webdev"));
 alphaOrder("webdev"); // ➞ "bdeevw"
