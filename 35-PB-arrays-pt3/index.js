@@ -117,13 +117,16 @@ amplify(25); // ➞ [1, 2, 3, 40, 5, 6, 7, 80, 9, 10, 11, 120, 13, 14, 15, 160, 
 
 // 4. One is not like the others... 
 
-console.log("4. One is not like the others:");
+/* console.log("4. One is not like the others:");
 
 const unique = (array) => {
     let newArray = [];
-    for (let number of array) {
-        console.log(array.indexOf(number));
+    for (let i = 0; i < array.length; i++) {
+        if (!newArray.includes(array[i])) {
+            newArray.push(array[i]);
+        }
     }
+    console.log(newArray);
 
 
 }
@@ -131,4 +134,79 @@ const unique = (array) => {
 
 unique([3, 3, 3, 7, 3, 3]); // ➞ 7
 unique([0, 0, 0.77, 0, 0]); // ➞ 0.77
-unique([0, 1, 1, 1, 1, 1, 1, 1]); // ➞ 0
+unique([0, 1, 1, 1, 1, 1, 1, 1]); // ➞ 0 */
+
+///////////////////////////////////////////
+
+// 5. Word Ranking
+
+
+///////////////////////////////////////////
+
+// 6. c4n y0u r34d th15?
+console.log("6. c4n y0u r34d th15?");
+const hackerSpeak = string => {
+    let hackerString = [];
+    let stringSplit = string.split("");
+
+    for (let char of stringSplit) {
+        if (char === "a") {
+            hackerString.push("4");
+        } else if (char === "e") {
+            hackerString.push("3");
+        } else if (char === "i") {
+            hackerString.push("1");
+        } else if (char === "o") {
+            hackerString.push("0");
+        } else if (char === "s") {
+            hackerString.push("5");
+        } else {
+            hackerString.push(char);
+        }
+    }
+    return string + " -----> " + hackerString.join("");
+}
+
+console.log(hackerSpeak("javascript is cool"));
+console.log(hackerSpeak("programming is fun"));
+console.log(hackerSpeak("become a coder"));
+
+// ➞ "j4v45cr1pt 15 c00l"
+// ➞ "pr0gr4mm1ng 15 fun"
+// ➞ "b3c0m3 4 c0d3r"
+
+
+///////////////////////////////////////
+
+// Bonus Questions
+
+// 1. Is it Symmetrical?
+console.log("1. Is it Symmetrical?:");
+
+/////////////////////////////////
+
+// 2. snake_case ➞ camelCase
+console.log("2. snake_case ➞ camelCase:");
+
+const toCamelCase = string => {
+    let myString = string.split("");
+    let camelString = [];
+    for (let char of myString) {
+        if (char === "_") {
+            camelString.push("");
+        } else {
+            camelString.push(char);
+        }
+    }
+    console.log(camelString.join(""));
+
+
+}
+
+toCamelCase("hello_world"); // ➞ "helloWorld"
+toCamelCase("javascript_is_fun"); // ➞ "javaScriptIsFun"
+///////////////////////////////////////////
+
+// 3. Pig Latin Translation.
+
+console.log("3. Pig Latin Translation:");
