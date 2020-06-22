@@ -100,16 +100,6 @@ const missingNums = arrayOfNumbers => {
         return a - b;
     });
 
-
-    /* for (let num of sortArray) {
-
-        if (sortArray.indexOf(num) === -1) {
-            number.push(num);
-        }
-
-    }
-    console.log(number); */
-
     for (let i = 0; i <= 10; i++) {
         if (sortArray.indexOf(i) === -1) {
             if (i !== 0) {
