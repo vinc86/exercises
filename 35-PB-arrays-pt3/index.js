@@ -130,11 +130,23 @@ const unique = (array) => {
 
 
 }
+*/
 
+function unique(array) {
+    let currentValue = null;
+    for (let i = 0; i < array.length; i++) {
+        currentValue = array[i];
+        if (array.indexOf(currentValue) === array.lastIndexOf(currentValue)) { // no doublette
+            return currentValue; // uniqueness
+        } else {
+            console.log("We found a double!" + array[i]);
+        }
+    }
+}
 
 unique([3, 3, 3, 7, 3, 3]); // ➞ 7
 unique([0, 0, 0.77, 0, 0]); // ➞ 0.77
-unique([0, 1, 1, 1, 1, 1, 1, 1]); // ➞ 0 */
+unique([0, 1, 1, 1, 1, 1, 1, 1]); // ➞ 0 
 
 ///////////////////////////////////////////
 
@@ -189,17 +201,22 @@ console.log("1. Is it Symmetrical?:");
 console.log("2. snake_case ➞ camelCase:");
 
 const toCamelCase = string => {
-    let myString = string.split("");
+    /*  let myString = string.split("_")[1];
+     console.log(myString); */
+    /* let myString = string.split("_")
+   
+    console.log(words);
     let camelString = [];
     for (let char of myString) {
         if (char === "_") {
-            camelString.push("");
+            camelString.push(" ");
+            
         } else {
             camelString.push(char);
         }
     }
-    console.log(camelString.join(""));
-
+    console.log(camelString.join("")); */
+    string.replace()
 
 }
 
