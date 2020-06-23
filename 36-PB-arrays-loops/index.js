@@ -132,6 +132,20 @@ console.log(capitalizeNames(names));
 // 6.No Duplicates! 
 console.log("6.No Duplicates!");
 
+const noDuplicates = array => {
+
+    let newArray = [];
+    for (let num of array) {
+        if (!newArray.includes(num)) {
+            newArray.push(num);
+        }
+    }
+    return newArray;
+}
+
+console.log(noDuplicates([1, 4, 4, 7, 7, 7]));
+console.log(noDuplicates([2, 2, 2, 2, 2, 2]));
+console.log(noDuplicates([1, 4, 4, 7, 7, 7]));
 /////////////////////////////////////////////
 
 // 7. Repeat it
