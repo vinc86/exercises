@@ -3,11 +3,11 @@ console.log("task 1:");
 
 const printStars = () => {
     let myArray = [];
-    let result = "";
+
     for (let i = 0; i < 4; i++) {
         for (let j = 0; j < i; j++) {
             myArray.push("*");
-            console.log(myArray);
+            console.log(myArray.join(" "));
         }
 
     }
@@ -42,3 +42,27 @@ const printArray = array => {
 }
 
 printArray(arr);
+
+//////////////////////////////////////////////////
+
+// 3.
+console.log("task 3:");
+
+const printNumbers = () => {
+    let arrayOne = [];
+    let arrayTwo = [];
+    for (let i = 1; i <= 4; i++) {
+
+        for (let j = 0; j <= 4; j++) {
+            if (j !== 0 && j <= 3) {
+                arrayOne.push(i);
+            }
+            arrayTwo.push(j);
+        }
+
+    }
+    console.log(arrayOne.join(" "));
+    console.log(arrayTwo.join(" "));
+}
+
+printNumbers();
