@@ -32,7 +32,20 @@ const person = {
         }
     },
     getObjLength: function () {
-        return Object.keys(person).length;
+
+        // i want not to include getObjLength() in the final length;
+        let props = Object.getOwnPropertyNames(person);
+        let length = 0;
+
+        for (let key of props) {
+            if (key !== "getObjLength") {
+                length += 1;
+            }
+        }
+        return length;
+
+        // it includes all the keys and methods 
+        /* return Object.keys(person).length; */
     }
 }
 
