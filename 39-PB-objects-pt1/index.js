@@ -74,11 +74,7 @@ const objectToArray = (obj) => {
 
 
 objectToArray(object);
-objectToArray({
-    cats: 1,
-    dogs: 2,
-    turtles: 4
-});
+
 
 //////////////////////////////////////////////////
 
@@ -100,13 +96,12 @@ let last = {
 
 console.log(newObject); */
 
-const mergeObjects = (...obj) => {
-    const newObject = {};
-    for (let key in obj) {
-        console.log("here");
-        newObject[key] = obj[key];
-    }
+/* const mergeObjects = (obj) => {
+    let newObject = Object.assign({}, obj);
     return newObject;
 }
 
-console.log(mergeObjects(first, last));
+console.log(mergeObjects(first, last)); */
+
+let newObject = Object.assign({}, first, last);
+console.log(newObject);
