@@ -75,7 +75,21 @@ const objectToArray = (obj) => {
 
 objectToArray(object);
 
+//////////////////////////////////////////////////
 
+// 2. List Properties
+console.log("\n2. List Properties:");
+
+let student = {
+    name: "Mike",
+    class: "4A",
+    course: "English"
+}
+
+const getObjKeys = obj => {
+    return Object.keys(obj);
+}
+console.log(getObjKeys(student));
 //////////////////////////////////////////////////
 
 // 3. Merge.
