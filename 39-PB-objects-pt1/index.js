@@ -61,3 +61,52 @@ console.log(`
 Bonus Questions
 1. Convert keys and values into an array:
 `);
+
+let object = {
+    A: 1,
+    B: 2,
+    C: 3
+}
+
+const objectToArray = (obj) => {
+    console.log(Object.entries(obj));
+}
+
+
+objectToArray(object);
+objectToArray({
+    cats: 1,
+    dogs: 2,
+    turtles: 4
+});
+
+//////////////////////////////////////////////////
+
+// 3. Merge.
+console.log("\n3. Merge:");
+
+
+let first = {
+    firstName: "John"
+}
+let last = {
+    lastName: "Smith"
+}
+
+/* const newObject = {
+    ...first,
+    ...last
+};
+
+console.log(newObject); */
+
+const mergeObjects = (...obj) => {
+    const newObject = {};
+    for (let key in obj) {
+        console.log("here");
+        newObject[key] = obj[key];
+    }
+    return newObject;
+}
+
+console.log(mergeObjects(first, last));
