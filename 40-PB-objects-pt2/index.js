@@ -134,3 +134,36 @@ const countLetters = string => {
 }
 
 console.log(countLetters("trreee"));
+
+//////////////////////////////////////
+
+// 5. Free Shipping
+console.log("\n5. Free Shipping:");
+
+
+const freeShipping = obj => {
+
+
+    let total = 0;
+    for (item in obj) {
+        let price = obj[item];
+        total += price;
+    }
+
+    console.log(total > 50 ? true : false);
+}
+
+
+
+freeShipping({
+    "Sponge": 3.50,
+    "Soap": 5.99
+}); // ➞ false
+freeShipping({
+    "Surround Sound Equipment": 499.99
+}); // ➞ true
+freeShipping({
+    "Wool": 13.99,
+    "Knitting Needles": 15.50,
+    "Bag": 13.99
+}); // ➞ false
