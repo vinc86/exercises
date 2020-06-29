@@ -167,3 +167,54 @@ freeShipping({
     "Knitting Needles": 15.50,
     "Bag": 13.99
 }); // ➞ false
+
+/////////////////////////////////////
+
+// 6. Programming Object.
+console.log("\n6. Programming Object:");
+
+const programming = {
+    languages: ["JavaScript", "Python", "Ruby"],
+    isChallenging: true,
+    isRewarding: true,
+    difficulty: 8,
+    jokes: "http://stackoverflow.com/questions/234075/what-is-your-best-programmer-joke",
+    saySomething: function () {
+        if ((this.isChallenging === true) && (this.isRewarding === true)) {
+            return `Learning the programming languages: ${this.languages.join(", ")} is rewarding and challenging.`;
+        }
+    }
+};
+
+//1
+programming.languages.push("Go");
+//2
+programming.difficulty = 7;
+//3
+delete programming.jokes;
+//4
+programming.isFun = true;
+//5
+console.log("\nprogramming languages:");
+for (let keys in programming.languages) {
+    console.log("----", programming.languages[keys]);
+}
+//6
+console.log("\nObject Keys:");
+for (let keys in programming) {
+    console.log("----", keys);
+}
+//7
+console.log("\nObject Values:");
+for (let keys in programming) {
+    console.log("----", programming[keys]);
+}
+//8
+console.log(programming.saySomething);
+/*  
+if we console.log the method without calling it with the (), 
+it will display only the type and the name of the method.
+*/
+
+
+console.log(programming);
