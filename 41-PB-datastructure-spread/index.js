@@ -39,13 +39,46 @@ console.log(copiedArray);
 
 ///////////////////////////////////////////
 
-// 3. Find the Largest
-console.log("\n3. Find the Largest:");
+// 3. Find the Largest && 4. Find the Smallest
+console.log("\n3 and 4:");
 
-let numbers = ["3", "4", "7", "10"];
+let numbers = [3, 4, 7, 10];
 
-const checkLargestNum = array => {
-
-
-
+const checkLargest = (obj) => {
+    console.log("max: " + Math.max(...obj));
 }
+
+const checkSmallest = (obj) => {
+    console.log("min: " + Math.min(...obj));
+}
+checkSmallest(numbers);
+checkLargest(numbers);
+
+///////////////////////////////////////////
+
+// 5. Clone and Merge
+console.log("5. Clone and Merge:");
+
+const person = {
+    name: "John"
+}
+const job = {
+    role: "Teacher"
+}
+
+const personClone = {
+    ...person
+};
+
+console.log(personClone);
+
+const employee = {
+    ...person,
+    ...job
+};
+
+console.log(employee);
+
+employee.name = "Tom";
+employee.role = "Student";
+console.log(employee);
