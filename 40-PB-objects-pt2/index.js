@@ -118,11 +118,19 @@ console.log("---", isEmpty({
 console.log("\n4. Counting Letters:");
 
 
-/* const countLetters = string => {
+const countLetters = string => {
 
 
-        let stringCount = {};
-        let count = 0;
+    let stringCount = {};
 
-        for (let i = 0; i < string.length; i++) {}
-        countLetters("tree"); */
+    for (let letter of string) {
+        if (stringCount[letter]) {
+            stringCount[letter] += 1;
+        } else {
+            stringCount[letter] = 1;
+        }
+    }
+    return stringCount;
+}
+
+console.log(countLetters("trreee"));
