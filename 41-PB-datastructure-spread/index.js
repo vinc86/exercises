@@ -83,3 +83,26 @@ employee.name = "Tom";
 employee.role = "Student";
 
 console.log(employee);
+
+////////////////////////////////////
+
+// Bonus: 6.  Is the average a whole number?
+console.log("Bonus: 6.  Is the average a whole number?")
+
+const isWhole = (...numbers) => {
+    let sum = 0;
+    let average = 0;
+    for (let num of numbers) {
+        sum += num;
+        average = sum / numbers.length;
+    }
+
+    if (Number.isInteger(average)) {
+        return `${average}: Integer`;
+    } else {
+        return `${average}: Not integer`;
+    }
+}
+
+console.log(isWhole(2, 3, 4, 5));
+console.log(isWhole(...[2, 3, 4, 5]));
