@@ -44,15 +44,15 @@ console.log("\n3 and 4:");
 
 let numbers = [3, 4, 7, 10];
 
-const checkLargest = (obj) => {
-    console.log("max: " + Math.max(...obj));
+const findLargest = (array) => {
+    console.log("max: " + Math.max(...array));
 }
 
-const checkSmallest = (obj) => {
-    console.log("min: " + Math.min(...obj));
+const findSmallest = (array) => {
+    console.log("min: " + Math.min(...array));
 }
-checkSmallest(numbers);
-checkLargest(numbers);
+findSmallest(numbers);
+findLargest(numbers);
 
 ///////////////////////////////////////////
 
@@ -81,4 +81,5 @@ console.log(employee);
 
 employee.name = "Tom";
 employee.role = "Student";
+
 console.log(employee);
