@@ -73,17 +73,56 @@ const playerSet = [{
 
 const scrabbleScore = (obj) => {
     let totalScore = 0;
-    for (let first of obj) {
-        for (let elements in first) {
-            if (elements === "score") {
-                let point = first[elements];
+    for (let firstArray of obj) {
+        for (let key in firstArray) {
+            if (key === "score") {
+                let point = firstArray[key];
                 totalScore += point;
             };
         }
     }
     return `Total score: ${totalScore} points`;
+
 }
 
 console.log(scrabbleScore(playerSet));
 
 //////////////////////////////////////////////////
+
+// 3. Is it an empty object?
+console.log("\n3. Is it an empty object?");
+
+const isEmpty = (obj) => {
+
+    if (!obj) {
+        return "Insert an object!";
+    } else {
+        let keysLength = Object.keys(obj).length;
+        if (keysLength === 0) {
+            return "Empty object";
+        } else {
+            return `The object has ${keysLength} properties!`;
+        }
+    }
+
+}
+console.log("-", isEmpty());
+console.log("--", isEmpty({}));
+console.log("---", isEmpty({
+    a: 1
+}));
+
+///////////////////////////////////////////////////
+
+// 4. Counting Letters
+console.log("\n4. Counting Letters:");
+
+
+/* const countLetters = string => {
+
+
+        let stringCount = {};
+        let count = 0;
+
+        for (let i = 0; i < string.length; i++) {}
+        countLetters("tree"); */
