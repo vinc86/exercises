@@ -55,14 +55,12 @@ incrementByOne(arrayOfNumbers);
 ///////////////////////////////////////////////////
 
 // 3. Filter Evens
-console.log("3. Filter Evens:");
+console.log("\n3. Filter Evens:");
 
-const filterEvens = (arr) => arr.filter(function (value) {
-    return value % 2 === 0;
-});
+const filterEvens = (arr) => arr.filter((value) => value % 2 === 0);
 
-console.log('ex 3', filterEvens([1, 2, 3, 11, 12, 13]));
-console.log('ex 3', filterEvens([22, 2, 31, 110, 6, 13]));
+console.log(filterEvens([1, 2, 3, 11, 12, 13]));
+console.log(filterEvens([22, 2, 31, 110, 6, 13]));
 
 
 ///////////////////////////////////////////////////////
