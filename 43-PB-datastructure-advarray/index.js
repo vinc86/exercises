@@ -87,10 +87,10 @@ friendFilter("e", friendsArray);
 // 5. Sum Up
 console.log("5. Sum Up:");
 
-const sum3 = arr => arr.reduce((previous, current) => previous + current);
+const sum = arr => arr.reduce((previous, current) => previous + current);
 
-console.log(sum3([1, 2, 3, 4, 5]));
-console.log(sum3([6, 7, 7]));
+console.log(sum([1, 2, 3, 4, 5]));
+console.log(sum([6, 7, 7]));
 
 ////////////////////////////////////////////////////
 
