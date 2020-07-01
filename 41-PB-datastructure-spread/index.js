@@ -84,6 +84,7 @@ employee.role = "Student";
 
 console.log(employee);
 
+
 ////////////////////////////////////
 
 // Bonus: 6.  Is the average a whole number?
