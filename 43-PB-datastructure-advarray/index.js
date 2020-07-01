@@ -43,14 +43,14 @@ console.log("\n2. Increment by 1:");
 
 
 const arrayOfNumbers = [3, 45, 6, 56, 7, 9];
-console.log(arrayOfNumbers);
-const newArrayOfNumbers = arrayOfNumbers.map(function (value) {
-    return value + 1;
-});
-console.log('ex 2.', newArrayOfNumbers);
 
+const incrementByOne = array => {
 
-Array.prototype.filter
+    const newArray = array.map((value) => value + 1);
+    console.log(newArray);
+}
+
+incrementByOne(arrayOfNumbers);
 
 ///////////////////////////////////////////////////
 
