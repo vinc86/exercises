@@ -2,6 +2,7 @@
 
 // 1. Get total orders
 console.log("1. Get total orders:");
+
 const orders = [{
         amount: 250
     },
@@ -16,19 +17,24 @@ const orders = [{
     }
 ];
 
-const arrayOrders = [];
+const totalAmount = array => {
 
+    const newArray = [];
+    array.map((array) => {
+        for (let keys in array) {
+            newArray.push(array[keys]);
+        }
 
-for (const obj of orders) {
-    for (const key in obj) {
-        console.log(obj[key]);
-        arrayOrders.push(obj[key]);
-    }
+    })
+    const totalSum = newArray.reduce((previousValue, currentValue) => {
+        return previousValue + currentValue;
+
+    });
+
+    console.log(totalSum);
 }
-const totalAmount = arrayOrders.reduce(function (previous, current) {
-    return previous + current;
-});
 
+totalAmount(orders);
 
 //////////////////////////////////////////////////
 
