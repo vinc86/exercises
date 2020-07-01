@@ -68,20 +68,19 @@ console.log(filterEvens([22, 2, 31, 110, 6, 13]));
 // 4. Filter Friends
 console.log("4. Filter Friends:");
 
+const friendsArray = ["rika", "jenna", "bleda", "oliver", "itamar"];
 
-const friends = ["rika", "jenna", "bleda", "oliver", "itamar"];
-const filterItems = (arr, str) => {
-    const filteredArr = arr.filter(function (value) {
-        return value.includes(str);
-    })
-    for (let i = 0; i < filteredArr.length; i++) {
-        filteredArr[i] = filteredArr[i][0].toUpperCase() + filteredArr[i].slice(1);
-    }
-    return filteredArr;
+
+
+const friendFilter = (query, array) => {
+    const filteredArray = array.filter((value) => value.includes(query));
+    console.log(filteredArray);
 }
 
-console.log('ex 4', filterItems(friends, 'ka'));
-console.log('ex 4', filterItems(friends, 'e'));
+
+friendFilter("ka", friendsArray);
+friendFilter("o", friendsArray);
+friendFilter("e", friendsArray);
 
 /////////////////////////////////////////////////////
 
