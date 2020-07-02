@@ -54,7 +54,6 @@ class Tv {
         this.brand = brand;
         this.channel = 1;
         this.volume = 50;
-
     }
 
     increaseVolume = () => {
@@ -83,6 +82,7 @@ class Tv {
         this.volume = 50;
         this.channel = 1;
     }
+
     getTvStatus = () => `${this.brand} at channel ${this.channel}, volume ${this.volume}`;
 
 }
