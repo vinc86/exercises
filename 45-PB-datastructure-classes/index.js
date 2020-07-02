@@ -57,22 +57,22 @@ class Tv {
     }
 
     increaseVolume = () => {
-        if (this.volume === 100) {
+        if (this.volume >= 100) {
             console.log("Max volume reached!");
-            return;
+
         } else {
             this.volume += 10;
-            console.log("Volume up!");
+            console.log("Volume up!", this.volume);
         }
     }
 
     decreaseVolume = () => {
-        if (this.volume === 0) {
+        if (this.volume <= 0) {
             console.log("Min volume reached!");
-            return;
+
         } else {
             this.volume -= 10;
-            console.log("Volume Down!");;
+            console.log("Volume Down!", this.volume);
         }
     }
 
@@ -116,4 +116,40 @@ console.log(myTv.getTvStatus());
 myTv.increaseVolume();
 console.log(myTv.getTvStatus());
 myTv.resetTv();
+console.log(myTv.getTvStatus());
+myTv.resetTv();
+console.log(myTv.getTvStatus());
+myTv.increaseVolume();
+myTv.increaseVolume();
+myTv.increaseVolume();
+myTv.increaseVolume();
+myTv.increaseVolume();
+myTv.increaseVolume();
+myTv.increaseVolume();
+myTv.increaseVolume();
+myTv.increaseVolume();
+myTv.increaseVolume();
+myTv.increaseVolume();
+myTv.increaseVolume();
+myTv.increaseVolume();
+myTv.increaseVolume();
+myTv.increaseVolume();
+myTv.increaseVolume();
+myTv.increaseVolume();
+myTv.increaseVolume();
+myTv.increaseVolume();
+myTv.increaseVolume();
+myTv.increaseVolume();
+myTv.increaseVolume();
+myTv.increaseVolume();
+myTv.increaseVolume();
+myTv.increaseVolume();
+myTv.increaseVolume();
+myTv.increaseVolume();
+myTv.increaseVolume();
+myTv.increaseVolume();
+myTv.increaseVolume();
+myTv.increaseVolume();
+myTv.increaseVolume();
+myTv.increaseVolume();
 console.log(myTv.getTvStatus());
