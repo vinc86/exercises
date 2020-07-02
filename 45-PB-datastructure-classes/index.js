@@ -54,35 +54,37 @@ class Tv {
         this.brand = brand;
         this.channel = 1;
         this.volume = 50;
-        this.increaseVolume = () => {
-            if (this.volume === 100) {
-                console.log("Max volume reached!");
-                return;
-            } else {
-                this.volume += 10;
-                console.log("Volume up!");
-            }
-        }
-        this.decreaseVolume = () => {
-            if (this.volume === 0) {
-                console.log("Min volume reached!");
-                return;
-            } else {
-                this.volume -= 10;
-                console.log("Volume Down!");;
-            }
-        }
-        this.randomZapping = () => {
-            this.channel = Math.floor(Math.random() * 50);
-        }
-        this.resetTv = () => {
-            this.volume = 50;
-            this.channel = 1;
-        }
-        this.getTvStatus = () => {
-            return `${this.brand} at channel ${this.channel}, volume ${this.volume}`;
+
+    }
+
+    increaseVolume = () => {
+        if (this.volume === 100) {
+            console.log("Max volume reached!");
+            return;
+        } else {
+            this.volume += 10;
+            console.log("Volume up!");
         }
     }
+
+    decreaseVolume = () => {
+        if (this.volume === 0) {
+            console.log("Min volume reached!");
+            return;
+        } else {
+            this.volume -= 10;
+            console.log("Volume Down!");;
+        }
+    }
+
+    randomZapping = () => this.channel = Math.floor(Math.random() * 50);
+
+    resetTv = () => {
+        this.volume = 50;
+        this.channel = 1;
+    }
+    getTvStatus = () => `${this.brand} at channel ${this.channel}, volume ${this.volume}`;
+
 }
 
 const myTv = new Tv("Samsung");
