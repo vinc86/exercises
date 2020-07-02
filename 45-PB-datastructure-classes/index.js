@@ -73,7 +73,14 @@ class Tv {
             }
         }
         this.randomZapping = () => {
-            Math.floor(Math.random() * 50);
+            this.channel = Math.floor(Math.random() * 50);
+        }
+        this.resetTv = () => {
+            this.volume = 50;
+            this.channel = 1;
+        }
+        this.getTvStatus = () => {
+            return `${this.brand} at channel ${this.channel}, volume ${this.volume}`;
         }
     }
 }
@@ -100,3 +107,11 @@ myTv.decreaseVolume();
 myTv.decreaseVolume();
 myTv.decreaseVolume();
 console.log(myTv.volume);
+
+myTv.randomZapping();
+console.log(myTv.channel);
+console.log(myTv.getTvStatus());
+myTv.increaseVolume();
+console.log(myTv.getTvStatus());
+myTv.resetTv();
+console.log(myTv.getTvStatus());
