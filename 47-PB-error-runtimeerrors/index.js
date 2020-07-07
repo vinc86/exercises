@@ -103,7 +103,7 @@ const getMonthName = monthNum => {
         }
 
     } catch (e) {
-        return e.type, "=> ", e.message;
+        return e.name, "=> ", e.message;
     }
 
 }
