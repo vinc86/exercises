@@ -43,6 +43,9 @@ try {
     console.log(e.message);
 }
 
+
+////////////////////////////////////////////////////////
+
 // 2. Month Name
 console.log("\n2. Month Name:");
 
@@ -110,3 +113,24 @@ try {
 } catch (err) {
     console.log(err.name, "=> ", err.message)
 }
+
+////////////////////////////////////////////////
+
+//3. Reverse
+console.log("\n3. Reverse:");
+
+const reverseString = string => {
+
+    try {
+        if (typeof string !== "string") {
+            throw new Error("This is not a string!");
+        } else {
+            console.log(string.split("").reverse().join(""));
+        }
+    } catch (e) {
+        console.log(e.name, "=>", e.message);
+    }
+
+}
+
+reverseString(2019);
