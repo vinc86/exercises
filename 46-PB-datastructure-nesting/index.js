@@ -92,6 +92,6 @@ const changeIngredientName = (array, originalName, newName) => {
     }
 }
 
-changeIngredientName(recipes.ingredients, "sugar", "brown sugar");
+changeIngredientName(recipes.ingredients, "sugar", "bla bla");
 
 console.log(recipes.printIngredients());

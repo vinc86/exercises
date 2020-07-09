@@ -56,7 +56,7 @@ const getMonthName = monthNum => {
     try {
 
         if (typeof monthNum !== "number") {
-            throw new Error("Error: Should be a valid number!");
+          throw new Error("Error: Should be a valid number!");
         } else {
             let message = "";
             switch (monthNum) {
@@ -109,7 +109,7 @@ const getMonthName = monthNum => {
 }
 
 try {
-    console.log(getMonthName());
+    console.log(getMonthName(15));
 } catch (err) {
     console.log(err.name, "=> ", err.message)
 }
