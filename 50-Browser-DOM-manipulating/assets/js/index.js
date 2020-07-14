@@ -51,7 +51,10 @@ const bookCard = books.map(book => {
   //isReadSection
   let isRead = document.createElement('p');
   isRead.classList.add('is-read');
+  isRead.style.innerText = book.alreadyRead;
+
   isReadSection.appendChild(isRead);
+
 
   //append to parent container
   bookCard.appendChild(img);

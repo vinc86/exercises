@@ -31,6 +31,7 @@ img {
   width: 100%;
   height: 270px;
   border: 1px solid black;
+  background-size: cover;
 }
 
 h2 {
@@ -44,13 +45,16 @@ p {
 }
 
 .is-read-section {
+  display: flex;
   width: 100%;
   height: 100%;
-  background: green;
+  align-items: center;
+  justify-content: right;
 }
 
 .is-read {
-  background: red;
+  border-radius: 20px;
+  border: 1px solid #ccc;
   width: 70px;
   height: 20px;
 }
