@@ -53,8 +53,13 @@ p {
 }
 
 .is-read {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 20px;
-  border: 1px solid #ccc;
   width: 70px;
   height: 20px;
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #fff;
 }

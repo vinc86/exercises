@@ -51,7 +51,13 @@ const bookCard = books.map(book => {
   //isReadSection
   let isRead = document.createElement('p');
   isRead.classList.add('is-read');
-  isRead.style.innerText = book.alreadyRead;
+  if (book.alreadyRead === true) {
+    isRead.innerText = "Read";
+    isRead.style.background = "green";
+  } else {
+    isRead.innerText = "To read";
+    isRead.style.background = "#888";
+  };
 
   isReadSection.appendChild(isRead);
 
