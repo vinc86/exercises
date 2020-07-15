@@ -1,0 +1,26 @@
+h1 {
+    text-align: center;
+    margin: 20px;
+}
+
+.list-group {
+    display: none;
+}
+
+button {
+    margin-top: 20px;
+}
+
+.show-list {
+    display: block;
+}
+
+.destination {
+    display: none;
+    width: 500px;
+    margin: auto;
+}
+
+.show {
+    display: block;
+}
