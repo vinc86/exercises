@@ -21,13 +21,18 @@ let images = [{
 }];
 
 images.map(image => {
-    const img = document.createElement('img');
-    img.setAttribute('src', image.path);
-    img.setAttribute('id', image.id);
-    imgContainer.appendChild(img);
+        const img = document.createElement('img');
+        img.setAttribute('src', image.path);
+        img.setAttribute('id', image.id);
+        imgContainer.appendChild(img);
 
-    const imgButton = document.createElement('a');
-    imgButton.setAttribute('href', `#${image.id}`);
-    imgButton.classList.add('slide');
-    imgSlider.appendChild(imgButton);
-});
+        const imgButton = document.createElement('a');
+        imgButton.setAttribute('href', `#${image.id}`);
+        imgButton.classList.add('slide');
+
+        imgSlider.appendChild(imgButton);
+
+
+    }
+
+);

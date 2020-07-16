@@ -1,3 +1,7 @@
+body {
+    scroll-behavior: smooth;
+}
+
 .container {
     width: 600px;
     margin: auto;
@@ -17,7 +21,6 @@
 img {
     width: 100%;
     height: 100%;
-    transition: all 0.5s;
 }
 
 .image-slider {
@@ -34,4 +37,25 @@ img {
     border: 1px solid rgb(131, 131, 131);
     border-radius: 50%;
     margin: 5px;
+}
+
+.slide-anim {
+    animation: slide;
+    animation-duration: 0, 5s;
+    animation-direction: normal;
+}
+
+.button-active {
+    background-color: rgb(131, 131, 131);
+    border;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0px);
+    }
+
+    100% {
+        transform: translateX(-400px);
+    }
 }
