@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Password Generator</h1>
+        <div class="password-container">
+        </div>
+        <form class='password-form' action="">
+            <label for="length">Select your password length:</label>
+            <input class='select-length' type="number" id='length' min="5" max="20">
+            <br>
+            <label for="check">
+                With mixed cases?
+                <input class="mixed-case-check" type="checkbox" id="check">
+            </label>
+            <br>
+            <input class="button" type="submit" name='submit' value='Generate'>
+        </form>
+        <p class="message-box"></p>
+    </div>
+
+    <script src="./functions.js"></script>
+    <script src="./index.js"></script>
+
+</body>
+
+</html>
