@@ -85,7 +85,7 @@ aspectForm.addEventListener('change', (e) => {
     const newHeight = document.querySelector('#ratio_result-height');
     const newWidth = document.querySelector('#ratio_result-width');
 
-    newHeight.value = calculateAspectRatio(first.value, second.value, newHeight.value, newWidth.value);
+    /*  newHeight.value = calculateAspectRatio(first.value, second.value, newHeight.value, newWidth.value); */
 
 
 
